@@ -1,0 +1,8 @@
+{
+  "name" : "FlobbyBird",
+  "start_url" : "index.js",
+  "icons" : [],
+  "theme_color" : "#000000",
+  "display" : "fullscreen",
+  "orientation" : "portrait"
+}
