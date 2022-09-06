@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FlobbyBird</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/game.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Shows an error message, if the current window size is too high. (680px)-->
+    <div id="notSupported">
+          <h3>Das hätte nicht passieren sollen...</h3>
+          <p>Dieses Spiel kann gerade nicht auf deinem Display angezeigt werden. <br>
+          Die gewünschte Anzeige ist zu groß, bitte wähle eine kleinere. <br>
+          <i>Aktuell ist das Spiel nur für Smartphones optimiert, falls du deinen Speicherstand exportieren möchtest, dann klicke unten auf dem Knopf.</i></p>
+
+          <button id="notSupportedShowSave">Speicherstand anzeigen</button>
+          <br><br>
+          <textarea id="notSupportedShowSaveOutput" hidden></textarea>
+    </div>
+
+
+    <!-- The main game window -->
+    <div id="windowGame">
+      <canvas id="bird"></canvas>
+    </div>
+
+
+
+  </body>
+
+  <script type="text/javascript" src="assets/js/loadmanager.js"></script>
+
+  <script type="text/javascript" src="assets/js/game.js"></script>
+  <script type="text/javascript" src="assets/js/themes.js"></script>
+</html>

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  src: URL('../fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+
+html, body {
+  background-color: #252525;
+  font-family: 'Press Start 2P';
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #fff;
+}
+
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+
+#notSupported {
+  font-family: 'Quicksand';
+}
+
+
+@media (max-width:680px) {
+    #notSupported {
+      display: none;
+    }
+}
+
+@media (min-width:679px) {
+    #windowGame {
+      display: none;
+    }
+}
+
+
+#notSupported {
+  position:fixed;
+  padding: 2rem;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+  background:rgb(2,2,2);
+  z-index: 50;
+}
